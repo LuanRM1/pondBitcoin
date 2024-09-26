@@ -1,8 +1,6 @@
-# app/cache.py
 from cachetools import TTLCache
 import pandas as pd
 
-# Cache that expires after 1 hour
 cache = TTLCache(maxsize=100, ttl=3600)
 
 

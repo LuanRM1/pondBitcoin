@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 # URL do backend FastAPI
-BACKEND_URL = "http://localhost:8000"
+BACKEND_URL = "http://backend:8000"
 
 st.set_page_config(page_title="Previsão AVAX-USD", layout="wide")
 
