@@ -137,3 +137,28 @@ O RSI oferece uma análise de **momentum do mercado**, mostrando potenciais pont
 ### **4. Complementaridade na Análise**
 
 A combinação do LSTM e do RSI fortalece a análise dos movimentos de preço. O LSTM prevê a tendência futura, enquanto o RSI acrescenta um componente técnico que pode ajudar a confirmar se essa tendência faz sentido, dada a condição atual do mercado. Para uma analise mai aprofundada verifique os notebooks na pasta estudo.
+
+Aqui está a explicação em formato markdown, incluindo a menção ao pipeline de retraining e um cronograma:
+
+---
+
+## Planejamento para Retreinamento do Modelo com Novos Dados
+
+O planejamento do retrain do modelo envolve a criação de um pipeline automatizado para coleta, processamento e integração de novos dados de mercado, como preços de criptomoedas e indicadores técnicos (RSI, SMA_30, SMA_100). O pipeline de retraining será configurado para rodar em intervalos predefinidos, coletando novos dados, realizando o pré-processamento (como normalização e cálculo de indicadores) e integrando-os ao modelo existente. O modelo pode ser atualizado de forma incremental ou por retraining completo, dependendo do volume de dados e da estratégia definida. Ferramentas como **Airflow** ou **Luigi** podem ser usadas para automatizar e gerenciar a sequência de etapas.
+
+Após o retraining, o modelo será avaliado por meio de métricas como **MAE** e **RMSE** para garantir que as previsões sejam mais precisas. Esse pipeline será complementado com um sistema de deploy contínuo, garantindo que os novos modelos sejam implementados automaticamente em produção, com possibilidade de **rollback** se o desempenho não for satisfatório. Abaixo está um cronograma proposto para o retrain do modelo:
+
+---
+
+## Cronograma Proposto para Retraining
+
+| Etapa                      | Frequência | Responsável                |
+| -------------------------- | ---------- | -------------------------- |
+| Coleta de novos dados      | Diária     | Automático                 |
+| Pré-processamento de dados | Semanal    | Automático                 |
+| Retreinamento do modelo    | Mensal     | Automático/Equipe de Dados |
+| Avaliação do modelo        | Mensal     | Equipe de Dados            |
+| Deploy do novo modelo      | Mensal     | Automático                 |
+| Monitoramento contínuo     | Contínuo   | Automático                 |
+
+---
