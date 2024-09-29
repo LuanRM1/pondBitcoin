@@ -2,6 +2,9 @@
 
 Este projeto é uma aplicação de previsão de preços de AVAX-USD utilizando **FastAPI** para o backend e **Streamlit** para o frontend. Ele prevê o preço da AVAX-USD usando modelos LSTM e uma rede neural baseada no RSI. A aplicação é completamente containerizada usando **Docker Compose** para facilitar a execução.
 
+## Video de demonstração:
+[video](https://drive.google.com/file/d/1-ySCY_7WIRijCA9FDdf9jmFPo848NwtG/view?usp=sharing)
+
 ## Requisitos
 
 Certifique-se de que os seguintes pré-requisitos estão instalados no seu sistema:
